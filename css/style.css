@@ -82,6 +82,37 @@ body {
   color: #fad932;
 }
 
+.whatsapp-button {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+      width: 70px;
+      height: 70px;
+      bottom: 60px;
+      right: 45px;
+  }
+}
+
+
 @-webkit-keyframes hueAnimate {
   0% {
     -webkit-filter: hue-rotate(0deg);
