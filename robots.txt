@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# As paginas legais NAO sao bloqueadas aqui de proposito: elas usam
+# <meta name="robots" content="noindex, follow"> no HTML. Se fossem
+# bloqueadas por Disallow, o Google nao conseguiria ler o noindex.
+
+# Bots de IA de busca — liberados de proposito: aparecer nas respostas
+# do ChatGPT / Perplexity / Gemini tambem traz cliente.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://ramiresfotografia.com.br/sitemap.xml
